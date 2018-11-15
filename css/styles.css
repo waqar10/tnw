@@ -110,6 +110,7 @@ body{
 #section .section-wrapper .section-content .box .box-img > img{
     height: 10rem;
     width: 100%;
+    cursor: pointer;
 }
 #section .section-wrapper .section-content .box .box-para1{
     display: flex;
