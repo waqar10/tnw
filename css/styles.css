@@ -2,9 +2,9 @@ html{
     position: relative;
 }
 body{
+    font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     margin: 0;
-    font-family: 'Raleway', sans-serif;
 }
 #navbar{
     width: 100%;
@@ -23,16 +23,15 @@ body{
     display: flex;
     background: linear-gradient(to right, #d00340, #e13128 30%, #f7680c);
 }
-
 #navbar .navbar-logo{
     display: flex;
-    /* font-family: cursive; */
     font-size: 1.5rem;
-    line-height: 4rem;
+    line-height: 3.5rem;
     font-weight: 900;
     padding: 0 1rem;
     cursor: pointer;
     color: #ffffff;
+    align-self: center;
 }
 #navbar .navigation{
     align-self: center;
@@ -42,165 +41,266 @@ body{
     list-style-type: none;
     padding: 0;
 }
-
 #navbar .navigation > ul > li{
     padding: .5rem;
     font-family:'Raleway';
     text-transform: uppercase;
     color: #aaaaaa;
-    
-}
-#navbar .navigation > ul > li > a:hover{
-    color: #363434;
-    transition: .5s;
+    transition: .5s all;  
 }
 #navbar .navigation ul > li > a{
     text-decoration: none;
     color: #aaaaaa;
     letter-spacing: .8px;
 }
-
-#section{
+#navbar .navigation > ul > li > a:hover{
+    color: #363434;
+}
+  /* SECTION NEWS */
+#news{
     display: flex;
     flex-flow: column;
     margin: 0%;
     padding: 0%;
     justify-content: space-around;
     display: flex;
-
-
 }
-#section .section-wrapper{
-
-}
-#section .section-wrapper .section-heading{
+#news .news-wrapper .news-heading{
     font-weight: 700;
     font-family: 'Raleway';
     padding: 1rem 0 0 3.4rem;
 }
-#section .section-wrapper .section-heading > h2{
+#news .news-wrapper .news-heading > h2{
     display: flex;
     justify-content: start;
 }
-#section .section-wrapper .section-heading > h2 > a:hover{
-    color: #363434;
-    transition: .3s;
-}
-#section .section-wrapper .section-heading > h2 > a{
+#news .news-wrapper .news-heading > h2 > a{
     text-decoration: none;
     color: #ff4422;
     font-weight: 800;
 }
-#section .section-wrapper .section-content{
+#news .news-wrapper .news-heading > h2 > a:hover{
+    color: #363434;
+    transition: .3s;
+}
+#news .news-wrapper .news-content{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: .5rem;
-    
+    padding: .5rem;  
 }
-#section .section-wrapper .section-content .box{
+#news .news-wrapper .news-content .box{
     display: flex;
     flex-basis: 17rem;
     flex-wrap: wrap;
-    /* margin: 0 .5rem .5rem .5rem; */
 }
-#section .section-wrapper .section-content .box .box-img{
+#news .news-wrapper .news-content .box .box-img{
     padding-bottom: .5rem;
 }
-#section .section-wrapper .section-content .box .box-img > img{
+#news .news-wrapper .news-content .box .box-img > img{
     height: 10rem;
     width: 100%;
     cursor: pointer;
 }
-#section .section-wrapper .section-content .box .box-para1{
+#news .news-wrapper .news-content .box .box-para1{
     display: flex;
     padding-bottom: .2rem;
     /* flex-wrap: wrap; */
 }
-#section .section-wrapper .section-content .box .box-para1 > p{
+#news .news-wrapper .news-content .box .box-para1 > p{
     margin: 0;
     font-weight: 800;
     letter-spacing: 0.03rem;
     line-height: 1.4rem;
 }
-#section .section-wrapper .section-content .box .box-para1 > p:hover{
+#news .news-wrapper .news-content .box .box-para1 > p:hover{
     color: #ff4422;
     text-decoration: underline;
     cursor: pointer;
     transition: .3s;
 }
-/* #section .section-wrapper .section-content .box .box-para2{
-    margin: 0 0 1rem 0;
-} */
-#section .section-wrapper .section-content .box .box-para2 > p{
+#news .news-wrapper .news-content .box .box-para2 > p{
     margin: 0 0 1.8rem 0;
     letter-spacing: 0.03rem;
     color: #ababab;
     font-size: .8rem;
     font-weight: 500;
 }
-#section .section-wrapper .section-content .box .box-para2 > p > span:hover{
+#news .news-wrapper .news-content .box .box-para2 > p > span:hover{
     color: #5f5757;
     cursor: pointer;
 }
-
+    /* SECTION DEALS */
+#deals{
+    display: flex;
+    flex-flow: column;
+    margin: 0%;
+    padding: 0%;
+    justify-content: space-around;
+    display: flex;
+}
+#deals .deals-wrapper .deals-heading{
+    font-weight: 700;
+    font-family: 'Raleway';
+    padding: 1rem 0 0 3.4rem;
+}
+#deals .deals-wrapper .deals-heading > h2{
+    display: flex;
+    justify-content: start;
+}
+#deals .deals-wrapper .deals-heading > h2 > a{
+    text-decoration: none;
+    color: #ff4422;
+    font-weight: 800;
+}
+#deals .deals-wrapper .deals-heading > h2 > a:hover{
+    color: #363434;
+    transition: .3s;
+}
+#deals .deals-wrapper .deals-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: .5rem;  
+}
+#deals .deals-wrapper .deals-content .box{
+    display: flex;
+    flex-basis: 17rem;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+}
+#deals .deals-wrapper .deals-content .box .box-img{
+    padding-bottom: .5rem;
+}
+#deals .deals-wrapper .deals-content .box .box-img .tag:before{
+    content: ' ';
+    width: 0;
+    position: absolute;
+    height: 0;
+    border-bottom: 58px solid transparent;
+    border-top: 58px solid transparent;
+    border-left: 58px solid #fc0;
+    font-size: 0;
+    margin-left: 13.92rem;
+    margin-top: -2.35rem;
+    line-height: 0;
+    transform: rotate(-45deg);
+}
+#deals .deals-wrapper .deals-content .box .box-img .tag-one:after{
+  content: ' ';
+  width: 0;
+  position: absolute;
+  height: 0;
+  border-bottom: 55px solid transparent;
+  border-top: 58px solid transparent;
+  border-left: 57px solid #01b0ff;
+  font-size: 0;
+  line-height: 0;
+  margin-left: -0.5rem;
+  margin-top: 8.1rem;
+  transform: rotate(134deg);
+}
+#deals .deals-wrapper .deals-content .box .box-img .price-one{
+  transform: rotate(0deg);
+  line-height: 0;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10.9rem;
+  margin-left: .3rem;
+  font-size: xx-small;
+  color: #ffffff;
+  position: absolute;
+  text-transform: uppercase;
+}
+#deals .deals-wrapper .deals-content .box .box-img .price-one > span{
+  font-size: 1.3rem;
+}
+#deals .deals-wrapper .deals-content .box .box-img .price{
+    transform: rotate(45deg);
+    font-size: 14px;
+    font-weight: 900;
+    word-spacing: -.2rem;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 13rem;
+    margin-top: .4rem;
+}
+#deals .deals-wrapper .deals-content .box .box-img > img{
+    /* height: 10rem; */
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0px 8px 0.6rem -10px rgb(0, 0, 0.9);
+}
+#deals .deals-wrapper .deals-content .box .box-para-one{
+    display: flex;
+}
+#deals .deals-wrapper .deals-content .box .box-para-one > p{
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 0.03rem;
+    line-height: 1.4rem;
+    transition: .3s;
+}
+#deals .deals-wrapper .deals-content .box .box-para-one > p:hover{
+    color: #ff4422;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#deals .deals-wrapper .deals-content .box .box-para-two > del{
+    margin: 0 0 1.8rem 0;
+    letter-spacing: 0.03rem;
+    color: #ababab;
+    font-size: .8rem;
+    font-weight: 500;
+}
+#deals .deals-wrapper .deals-content .box .box-para-two > span{
+    color: #555;
+    font-family: cursive;
+    font-size: .95rem; 
+}
+        /* MEDIA QUERIES */
 @media all and (max-width: 640px){
-    #section .section-wrapper .section-content{
-        justify-content: space-evenly;
-        flex-flow: row wrap;
-    }
-
-    #navbar{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    #navbar .navbar-wrapper{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-    }
-    #navbar .navbar-logo{
-        /* justify-content: center;
-        display: flex; */
-        align-self: center;
-        /* flex-direction: column;
-        align-items: center; */
-        /* height: 8vh; */
-    }
-    #navbar .navigation > ul{
-        align-items: center;
-        flex-direction: column;
-        padding: 0;
-    }
-    #navbar .navigation > ul > li{
-        line-height: 1rem;
-    }
-    /* #section .section-wrapper{
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-    }
-    #section .section-wrapper .section-heading {
-        align-self: center;
-        padding-left: 0;
-} */
+#navbar{
+    flex-direction: column;
+    align-items: center;  
+}
+#navbar .navbar-wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#navbar .navbar-logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#navbar .navigation > ul{
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+#navbar .navigation > ul > li{
+    line-height: 1rem;
+}
+#news .news-wrapper .news-content{
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
 }
 @media all and (max-width: 740px){
-    #navbar{
-        /* flex-wrap: wrap; */
-        justify-content: center;
-        flex-flow: column;
-    }
-    #navbar .navbar-wrapper {
-        display: flex;
-        /* flex-flow: row wrap; */
-        justify-content: space-around;
-    }
-    #navbar .navbar-logo{
-        /* height: 11vh; */
-        /* border-radius: 50%; */
-        align-self: center;
-    }
-    
+#navbar{
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    flex-flow: column;
+}
+#navbar .navbar-wrapper {
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-around;
+}
+#navbar .navbar-logo{
+    align-self: center;
+}    
 }
